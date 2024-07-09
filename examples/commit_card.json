@@ -1,0 +1,84 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "themeColor": "0078D7",
+    "msteams": {
+        "width": "Full"
+    },
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Commit Card",
+            "weight": "bolder",
+            "size": "large",
+            "style": "heading"
+        },
+        {
+            "type": "Container",
+            "separator": "true",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "separator": "true",
+                            "width": "medium",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Project",
+                                    "weight": "bolder",
+                                    "size": "medium",
+                                    "color": "Default"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Lines inserted",
+                                    "weight": "bolder",
+                                    "size": "medium",
+                                    "color": "Default"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Lines deleted",
+                                    "weight": "bolder",
+                                    "size": "medium",
+                                    "color": "Default"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "separator": "true",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "[MsTeamsAdaptiveCards](https://github.com/AeroFlorian/MsTeamsAdaptiveCard)",
+                                    "weight": "bolder",
+                                    "size": "medium",
+                                    "color": "Default"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "86",
+                                    "weight": "bolder",
+                                    "size": "medium",
+                                    "color": "Good"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "72",
+                                    "weight": "bolder",
+                                    "size": "medium",
+                                    "color": "Attention"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
