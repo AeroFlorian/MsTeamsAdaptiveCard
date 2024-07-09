@@ -1,0 +1,78 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "themeColor": "0078D7",
+    "msteams": {
+        "width": "Full"
+    },
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Bug Card",
+            "weight": "bolder",
+            "size": "large",
+            "style": "heading"
+        },
+        {
+            "type": "Container",
+            "separator": "true",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "**Detected Bug**",
+                    "weight": "bolder",
+                    "size": "medium",
+                    "style": "heading"
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "medium",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://w7.pngwing.com/pngs/51/498/png-transparent-insect-cartoon-drawing-bug-animals-insects-painting-thumbnail.png",
+                                    "size": "medium"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Detected bug by AeroFlorian!",
+                                    "weight": "bolder",
+                                    "size": "medium"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "**Severity**: High"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "separator": "true",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.OpenUrl",
+                            "title": "Open Bug",
+                            "url": "https://github.com/AeroFlorian/MsTeamsAdaptiveCard/issues"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

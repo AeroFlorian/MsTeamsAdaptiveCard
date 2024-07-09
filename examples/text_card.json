@@ -1,0 +1,36 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "themeColor": "0078D7",
+    "msteams": {
+        "width": "Full"
+    },
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Text Card",
+            "weight": "bolder",
+            "size": "large",
+            "style": "heading"
+        },
+        {
+            "type": "Container",
+            "separator": "true",
+            "items": [
+                {
+                    "type": "Container",
+                    "separator": "true",
+                    "style": "emphasis",
+                    "fontType": "Monospace",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "This is a simple text card",
+                            "wrap": "true"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
