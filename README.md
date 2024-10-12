@@ -17,7 +17,6 @@ This lib is available in PyPi, you can install it via pip:
 
 
 ## Getting your New Connector Url
-Usage is close to pymsteams
 To get your connector url, you must create a flow in Workflows/Power Automate.
 
 Trigger to choose is `When a Teams webhook request is received`
