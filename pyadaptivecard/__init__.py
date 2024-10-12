@@ -219,6 +219,7 @@ class AdaptiveCard:
                 {
                 'contentType': "application/vnd.microsoft.teams.card.adaptive",
                 'version':'1.4',
+                'summary': self._summary,
                 'content':data
                 }
             ]
