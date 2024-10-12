@@ -1,8 +1,12 @@
 # MsTeamsAdaptiveCard
 
+
 ## Description
 Python lib to move from ConnectorCards to AdaptiveCards in MS Teams
 As O365 Connectors will be deprecated, new usage is via Workflows/Power Automate
+
+## Documentation and Examples
+Documentation and Examples are available at [GitHub](https://github.com/AeroFlorian/MsTeamsAdaptiveCard)
 
 ## Installation
 This lib is available in PyPi, you can install it via pip:
