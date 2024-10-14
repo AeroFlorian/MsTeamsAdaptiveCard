@@ -1,0 +1,398 @@
+{
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "themeColor": "0078D7",
+    "msteams": {
+        "width": "Full"
+    },
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Table Card",
+            "weight": "bolder",
+            "size": "large",
+            "style": "heading"
+        },
+        {
+            "type": "Container",
+            "separator": "true",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "My Table Section",
+                    "weight": "bolder",
+                    "size": "medium",
+                    "style": "heading"
+                },
+                {
+                    "type": "Table",
+                    "columns": [
+                        {
+                            "width": 3
+                        },
+                        {
+                            "width": 3
+                        },
+                        {
+                            "width": 3
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Column 1"
+                                        }
+                                    ],
+                                    "style": "emphasis"
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Column 2"
+                                        }
+                                    ],
+                                    "style": "emphasis"
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Column 3"
+                                        }
+                                    ],
+                                    "style": "emphasis"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 5"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 7"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 9"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 6"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 8"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Value 3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "separator": "true",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "My Table Without Headings",
+                    "weight": "bolder",
+                    "size": "medium",
+                    "style": "heading"
+                },
+                {
+                    "type": "Table",
+                    "columns": [
+                        {
+                            "width": 3
+                        },
+                        {
+                            "width": 3
+                        },
+                        {
+                            "width": 3
+                        }
+                    ],
+                    "rows": [
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Values"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "for"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "days"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Values"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "for"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "days"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Values"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "for"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "days"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Values"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "for"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "days"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRow",
+                            "cells": [
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Values"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "for"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "TableCell",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "days"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

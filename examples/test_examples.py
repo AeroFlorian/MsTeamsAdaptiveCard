@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import pyadaptivecard
 import json
 
@@ -77,9 +77,37 @@ def test_multi_section_card():
     with open("multi_section_card.json", "w") as f:
         f.write(json.dumps(card.to_json(), indent=4))
 
+def test_table_card():
+    card = pyadaptivecard.AdaptiveCard("Check How To get Webhook URL")
+    card.title("Table Card")
+    card.summary("I got a lot of tables")
+    table_section = pyadaptivecard.TableSection("My Table Section")
+
+    table_section.addRow("Column 1", "Column 2", "Column 3")
+    table_section.addRow("Value 1", "Value 2", "Value 3")
+    table_section.addRow("Value 4", "Value 2", "Value 3")
+    table_section.addRow("Value 5", "Value 7", "Value 9")
+    table_section.addRow("Value 6", "Value 8", "Value 3")
+    card.addSection(table_section)
+
+    table = [
+        ["Values", "for", "days"],
+        ["Values", "for", "days"],
+        ["Values", "for", "days"],
+        ["Values", "for", "days"],
+        ["Values", "for", "days"]
+    ]
+
+    table_section2 = pyadaptivecard.TableSection("My Table Without Headings", table, False)
+    card.addSection(table_section2)
+    with open("table_card.json", "w") as f:
+        f.write(json.dumps(card.to_json(), indent=4))
+
+
 if __name__ == "__main__":
     test_commit_card()
     test_bug_card()
     test_text_card()
     test_multi_section_card()
+    test_table_card()
     print("Cards created successfully!")
