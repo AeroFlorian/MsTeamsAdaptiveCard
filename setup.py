@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='PyMsTeamsAdaptiveCard',
-    version='0.1.9',
+    version='0.2.0',
     author='Florian Salaun',
     author_email='florian.salaun@gmail.com',
     packages=['pyadaptivecard', 'pyadaptivecard.test'],
