@@ -3,14 +3,10 @@ import requests
 
 class ActivitySection:
     def __init__(self) -> None:
-        self._proxy = None
         self._title = None
         self._activityTitle = None
         self._activitySubtitle = None
         self._activityImage = None
-
-    def proxy(self, proxy):
-        self._proxy = proxy
 
     def title(self, title):
         self._title = title
@@ -287,7 +283,10 @@ class AdaptiveCard:
                 }
             ]
         }
-        response = requests.post(self.url, json=message_body, headers=header, proxies={"https": self._proxy})
+        if self._proxy is not None:
+            response = requests.post(self.url, json=message_body, headers=header, proxies={"https": self._proxy})
+        else:
+            response = requests.post(self.url, json=message_body, headers=header)
         if 200 <= response.status_code <= 202:
             print("Adaptive Card sent!")
         else:
