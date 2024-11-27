@@ -48,6 +48,8 @@ Example of a Multi Section Card:
 
 instead of printing the contents of the cards, just do `card.send()` and check the result of your workflow!
 
-
+## Proxy
+You can add your proxy by setting it to the card
+`card.proxy("https://my.proxy:8080")`
 
 
