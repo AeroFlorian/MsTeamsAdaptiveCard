@@ -216,6 +216,7 @@ class AdaptiveCard:
         self._summary = "No Summary"
         self.sections = []
         self._color = "0078D7"
+        self._custom_fields = {}
 
     def proxy(self, proxy):
         self._proxy = proxy
@@ -228,6 +229,9 @@ class AdaptiveCard:
 
     def addSection(self, section):
         self.sections.append(section)
+
+    def addCustomField(self, field, value):
+        self._custom_fields[field] = value
 
     def color(self, color):
         self._color = color
@@ -283,6 +287,8 @@ class AdaptiveCard:
                 }
             ]
         }
+        if self._custom_fields:
+            message_body['attachments'][0].update(self._custom_fields)
         if self._proxy is not None:
             response = requests.post(self.url, json=message_body, headers=header, proxies={"https": self._proxy})
         else:
